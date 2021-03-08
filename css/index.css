@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    padding: 1rem 5rem 0 5rem;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+}
+nav img{
+    width: 4rem;
+    height: auto;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: teal;
+}
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background: #fb5283;
+    color: white;
+  }
+section{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+}
+section .left-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+}
+.left-container .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-container .top .line{
+    width: 1.5%;
+    height: 100%;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+}
+.left-container .top .words{
+    width: 96%;
+}
+section .right-container{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 2rem;
+}
+.right-container img{
+    padding-top: 2rem;
+    width:70%;
+    height: auto;
+}
+.right-container .image-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 2rem 0 0 2rem;
+    height: 80%;
+    width: 70%;
+    z-index: -1;
+    transform: translateX(2.5rem);
+    transform: translateY(2rem);
+    background: linear-gradient(to right, #fb5283, #ff3527);
+}
+.left-container .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 0rem 0rem 0rem;
+}
+.left-container .bottom .line2{
+    width: 1.5%;
+    height: 100%;
+    background-color: white;
+}
+.left-container .bottom .words2{
+    width: 96%;
+}
+.bottom button{
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    width: 7rem;
+    padding: .5rem;
+    border: none;
+    border-radius: .3rem;
+    margin-top: .5rem;
+    color: white;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+.bottom button img{
+    width: 2rem;
+    display: none;
+}
+.bottom button:hover img{
+    display: inline-block;
+}
+.bottom button:hover{
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-btn{
+    color: white;
+    text-align: center;
+}
+.add-btn img{
+    width: 3rem;
+    margin-bottom: .75rem;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    height: 20vh;
+    align-items: center;
+}
+footer img{
+    width: 1rem;
+    margin: 0 1.5rem;
+}
+footer .fb{
+    width: .5rem;
+}
+@media only screen and (max-width: 900px){
+    nav ul{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+        height: 10vh;
+        align-items: flex-start;
+    }
+    .topnav #myLinks{
+        display: none;
+    }
+    nav .topnav{
+        display: flex;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .container{
+        padding: 1rem;
+        height: 100vh;
+    }
+    nav ul{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+        height: 10vh;
+        align-items: flex-start;
+    }
+    .topnav #myLinks{
+        display: none;
+    }
+    nav .topnav{
+        display: flex;
+        width: 70%;
+    }
+    section{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+    section .left-container{
+        display: flex;
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+    }
+    section .right-container{
+        width: 100%;
+    }
+    .left-container .top{
+        padding-left: 3rem;
+        width: 100%;
+    }
+    .left-container .bottom{
+        padding-left: 3rem;
+    }
+}

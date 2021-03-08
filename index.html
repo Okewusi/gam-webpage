@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Gameshop</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="./Playstation_Img/Playstation_Img/logo.png" alt="logo">
+            <ul>
+                <li><a href="#">Game Controllers</a></li>
+                <li><a href="#">VR Accessories</a></li>
+                <li><a href="#">Media Remotes</a></li>
+                <li><a href="#">Others</a></li>
+            </ul>
+            <div class="topnav">
+                <a href="#home" class="active">Menu</a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                  <a href="#">Game Controllers</a>
+                  <a href="#">VR Accessories</a>
+                  <a href="#">Media Remotes</a>
+                  <a href="#">Others</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+        <section>
+         <div class="left-container">
+            <div class="top">
+                <div class="line"></div>
+                <div class="words">
+                    <h1>PS5 V2 <br> Dualshock 4</h1>
+                    <p>Wireless Controller for Playstation 5</p>
+                    <small>(CompactibleGeneric)</small>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="line2"></div>
+                <div class="words2">
+                    <p>$32.50</p>
+                    <button type="button">Buy Now <img src="./Playstation_Img/Playstation_Img/arrow.png" alt=""></button>
+                </div>
+            </div>
+         </div>  
+         <div class="right-container">
+             <div class="image-box"></div>
+             <img src="./Playstation_Img/Playstation_Img/controller.png" alt="">
+             <div class="add-btn">
+                 <img src="./Playstation_Img/Playstation_Img/add.png" alt="add icon">
+                 <p><small>Add to cart</small></p>
+             </div>
+         </div> 
+        </section>
+        <footer>
+            <ul>
+                <li><a href="/"><img class="fb" src="./Playstation_Img/Playstation_Img/fb.png" alt="facebook icon icon"></a></li>
+                <li><a href="/"><img src="./Playstation_Img/Playstation_Img/tw.png" alt="twitter icon"></a> </li>
+                <li><a href="/"><img src="./Playstation_Img/Playstation_Img/ig.png" alt="Instagram icon"></a> </li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    
+</body>
+</html>
